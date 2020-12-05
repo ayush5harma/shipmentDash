@@ -127,12 +127,14 @@ h1 {
 .timeline-container {
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin: 40px 0;
+    position: absolute;
+    width: 900px;
+    margin: 40px 0px;
+    margin-left: -400px;
 }
 
 .timeline-container::after {
-    background-color: #e17b77;
+    background-color: blue;
     content: '';
     position: absolute;
     left: calc(50% - 2px);
@@ -155,6 +157,13 @@ h1 {
     padding-left: 30px;
     padding-right: 0;
 }
+.timeline-item:nth-child(even) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
 
 .timeline-item-content {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -187,11 +196,23 @@ h1 {
     align-items: flex-start;
 }
 
+.timeline-item:nth-child(even) .timeline-item-content {
+    text-align: left;
+    align-items: flex-start;
+}
+
 .timeline-item:nth-child(odd) .timeline-item-content::after {
     right: auto;
     left: -7.5px;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+
+.timeline-item:nth-child(even) .timeline-item-content::after {
+    right: auto;
+    left: -7.5px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 
 .timeline-item-content .tag {
     color: #fff;
@@ -209,6 +230,12 @@ h1 {
     left: auto;
     right: 5px;
 }
+
+.timeline-item:nth-child(even) .timeline-item-content .tag {
+    left: auto;
+    right: 5px;
+}
+
 
 .timeline-item-content time {
     color: #777;
@@ -235,7 +262,7 @@ h1 {
 
 .timeline-item-content .circle {
     background-color: #fff;
-    border: 3px solid #e17b77;
+    border: 3px solid blue;
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 10px);
@@ -248,4 +275,20 @@ h1 {
 .timeline-item:nth-child(odd) .timeline-item-content .circle {
     right: auto;
     left: -40px;
+}
+.timeline-item:nth-child(even) .timeline-item-content .circle {
+    right: auto;
+    left: -40px;
+}
+
+
+.Image {
+    margin: 40px 0px;
+    margin-left: -170px;
+    position: absolute;
+
+}
+
+.sourceImage{
+    top: 760px;
 }
