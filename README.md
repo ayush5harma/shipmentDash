@@ -7,13 +7,22 @@ Flipr Coding Challenge task to replicate:
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### API Endpoint   
+API Endpoint for fetching Shipments - https://f0ztti2nsk.execute-api.ap-south-1.amazonaws.com/v1/consignment/fetch  
+`
+ const response = await fetch(url, {
+        method:"POST",
+        headers: new HashChangeEvent({Authorization:[Bearer Token]}),
+        body: {email:[your_email_address]}
+    });
+ `
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm deploy`  
-Deploys the app on github pages
+Deploys the app on github pages.  
 Open https://ayush5harma.github.io/shipmentDash/ to view it in the browser.
 
 ### `npm start`
