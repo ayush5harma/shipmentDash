@@ -1,10 +1,20 @@
-# Getting Started with Create React App
+# Shipment Dashboard
+
+Flipr Coding Challenge task to replicate:  
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47772616/101271780-fee09b00-37ab-11eb-96d7-5006d39a9a5d.png" />
+</p>
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm deploy`  
+Deploys the app on github pages
+Open https://ayush5harma.github.io/shipmentDash/ to view it in the browser.
 
 ### `npm start`
 
