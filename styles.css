@@ -215,7 +215,7 @@ h1 {
     left: -40px;
 }
 
-.CircleBackground{
+.circleBackground{
     border-radius: 50%;
     width: 500px;
     background: lightgray;
