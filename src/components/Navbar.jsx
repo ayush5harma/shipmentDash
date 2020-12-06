@@ -1,7 +1,6 @@
 import React from "react";
 const logo ="./FrontendAssets/logo.svg"
 const profile ="./FrontendAssets/profile.svg"
-const caret = "./FrontendAssets/caret.png"
 
 function Navbar() {
     return (
@@ -14,7 +13,7 @@ function Navbar() {
                 <a href="#">Transporters</a>
                 <a href="#">Transporters</a>
                 <a><img src={profile} /></a>
-                <a><img src={caret} /></a>
+                <a><img src="https://img.icons8.com/android/24/000000/chevron-down.png" /></a>
             </div>
         </div>
     );

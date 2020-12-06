@@ -4,8 +4,6 @@ import Timeline from "./Timeline";
 import TableContainer from "./TableContainer";
 import Counters from "./Counters";
 
-
-
 function  App() {
     return(
     <div>

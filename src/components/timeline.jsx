@@ -1,5 +1,5 @@
 import React from "react";
-import scan from './scan.jsx';
+import scan from './Scan.jsx';
 import TimelineItem from "./Timelineitem";
 const src = "./FrontendAssets/warehouse.svg"
 const dest = "./FrontendAssets/destination.svg"

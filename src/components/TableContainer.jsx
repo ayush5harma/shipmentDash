@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, GridColumn as Column } from '@progress/kendo-react-grid';
-import { gridData } from './appData';
+import  gridData from './Tabledata';
 
 function TableContainer() {
     return (
