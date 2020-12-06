@@ -1,3 +1,20 @@
+import React from "react";
+
+async function getData() {
+    const url ="https://f0ztti2nsk.execute-api.ap-south-1.amazonaws.com/v1/consignment/fetch";
+    const response = await fetch(url, {
+        method:"POST",
+        headers: new HashChangeEvent({Authorization:"Bearer tTU3gFVUdP"}),
+        body: {email:"mayankmittal@intugine.com"}
+    });
+    const data = await response.json();
+    console.log(data);
+}
+
+const data = getData().data;
+
+
+
 export const gridData = [
     {
 
@@ -119,7 +136,8 @@ export const gridData = [
 
                 "status_detail": "BOOKED"
 
-            }
+            },
+
 
         ],
 
