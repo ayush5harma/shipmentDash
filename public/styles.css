@@ -2,25 +2,26 @@
 
 /* Add a black background color to the top navigation */
 .nav {
+
     background-color: #ffffff;
     height: 30px;
 }
 
 /* Style the links inside the navigation bar */
 .nav a {
-    font-weight: bold;
+    font-weight: 500;
     color:black;
     caret: black;
     float: left;
     text-align: center;
-    padding: 15px 20px;
+    padding: 15px 15px;
     text-decoration: none;
     font-size: 20px;
 }
 
 /* Change the color of links on hover */
 .nav a:hover {
-    background-color: #add8e6;
+    background-color: lightblue;
     color: black;
 }
 
@@ -182,11 +183,11 @@
 
 .timeline-item:nth-child(odd) .timeline-item-content .circle {
     right: auto;
-    left: -40px;
+    left: -16px;
 }
 .timeline-item:nth-child(even) .timeline-item-content .circle {
     right: auto;
-    left: -40px;
+    left: -16px;
 }
 
 .circleBackground{
@@ -210,15 +211,18 @@
     top: 1000px;
 
 }
+.destinationImage{
+
+
+}
 /* End of Timeline styling */
 
 /* Start of Table Grid styling */
 
 div.ordersgrid{
-    border: 1px solid lightblue;
     padding : 50px;
-    width: 900px;
-    margin-left : 40%;
+    width: 1000px;
+    margin-left : 30%;
     margin-top : 200px;
 }
 /* End of Table Grid styling */

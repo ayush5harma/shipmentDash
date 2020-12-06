@@ -4,7 +4,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@progress/kendo-data-query": "^1.5.4",
+    "@progress/kendo-react-dateinputs": "^4.1.0",
+    "@progress/kendo-react-dropdowns": "^4.1.0",
     "@progress/kendo-react-grid": "^4.1.0",
+    "@progress/kendo-react-inputs": "^4.1.0",
+    "@progress/kendo-react-intl": "^4.1.0",
+    "@progress/kendo-theme-material": "^3.23.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
