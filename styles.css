@@ -1,0 +1,395 @@
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: #ffffff;
+    height: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+    font-weight: bold;
+    color:black;
+    caret: black;
+    float: left;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color: #add8e6;
+    color: black;
+}
+
+/* Right-aligned section inside the top navigation */
+.nav-right {
+    float: right;
+}
+
+h1 {
+    color:rgb(63, 81, 181);
+    font-weight: bold;
+}
+.buttons-right>button {
+    float: right;
+    margin: 5px;
+}
+.app-container {
+    padding: 25px;
+}
+
+.percentage-container {
+    text-align: center;
+}
+.percentage-container:first-child {
+    padding-bottom: 3em;
+}
+.container .row div {
+    outline: solid 1px black;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Timeline */
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 900px;
+    margin: 40px 0px;
+    margin-left: -400px;
+}
+
+.timeline-container::after {
+    background-color: blue;
+    content: '';
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+    margin: 10px 0;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+.timeline-item:nth-child(even) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+
+.timeline-item-content {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    position: relative;
+    width: 400px;
+    max-width: 70%;
+    text-align: right;
+}
+
+.timeline-item-content::after {
+    content: ' ';
+    background-color: #fff;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: -7.5px;
+    top: calc(50% - 7.5px);
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.timeline-item:nth-child(even) .timeline-item-content {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content::after {
+    right: auto;
+    left: -7.5px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item:nth-child(even) .timeline-item-content::after {
+    right: auto;
+    left: -7.5px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.timeline-item-content .tag {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    top: 5px;
+    left: 5px;
+    letter-spacing: 1px;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .tag {
+    left: auto;
+    right: 5px;
+}
+
+.timeline-item:nth-child(even) .timeline-item-content .tag {
+    left: auto;
+    right: 5px;
+}
+
+
+.timeline-item-content time {
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.timeline-item-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0;
+    max-width: 250px;
+}
+
+.timeline-item-content a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.timeline-item-content a::after {
+    content: ' ►';
+    font-size: 12px;
+}
+
+.timeline-item-content .circle {
+    background-color: #fff;
+    border: 3px solid blue;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -40px;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle {
+    right: auto;
+    left: -40px;
+}
+.timeline-item:nth-child(even) .timeline-item-content .circle {
+    right: auto;
+    left: -40px;
+}
+
+
+.Image {
+    margin: 40px 0px;
+    margin-left: -170px;
+    position: absolute;
+
+}
+
+.sourceImage{
+    top: 760px;
+}
+
+
+/* rshre */
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+div.topnav {
+    /* text-align: right; */
+    background-color: rgb(255, 253, 253);
+    /*overflow: hidden; */
+}
+.topnav c{
+    float: left;
+    padding: 15px 1px;
+}
+.topnav b{
+    float: left;
+    color: #0e0000;
+    /* text-align: right; */
+    padding: 25px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.topnav a{
+    float: right;
+    color: #0e0000;
+    /* text-align: right; */
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.topnav a.active {
+    background-color: #f3f5fc;
+    color: rgb(8, 0, 0);
+
+}
+/*
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+} */
+h1 {
+    color:rgb(63, 81, 181);
+    font-weight: bold;
+}
+.buttons-right>button {
+    float: right;
+    margin: 5px;
+    color: rgb(63, 81, 181);
+}
+.app-container {
+    padding: 25px;
+}
+
+.percentage-number {
+    color: rgb(63, 81, 181);
+    font-size: 50px;
+    font-weight: bold;
+}
+.percentage-sign {
+    color: rgb(63, 81, 181);
+    font-size: 40px;
+}
+.percentage-container {
+    text-align: center;
+}
+.percentage-container:first-child {
+    padding-bottom: 3em;
+}
+/* .container .row div {
+  outline: solid 1px black;
+} */
+.button {
+    background-color: #c9d9fc;
+    border: none;
+    color: rgb(94, 12, 245);
+    padding: 35px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.button active{
+    background-color: #3336ce;
+    border: none;
+    color: rgb(94, 12, 245);
+    padding: 35px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+div.status{
+    background-color: #fefeff;
+}
+.status a{
+    background-color: #c9d9fc;
+    border: none;
+    color: rgb(159, 132, 209);
+    padding: 35px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.status a.active{
+    background-color: #3336ce;
+    border: none;
+    color: rgb(250, 249, 252);
+    padding: 35px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+div.ordersgrid{
+
+}
